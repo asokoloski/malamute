@@ -39,6 +39,9 @@ class MalamuteClient(object):
                 fmt.format(*args, **kw) + ': ' + reason
             )
 
+    def msgpipe(self):
+        return self.c.msgpipe()
+
     def connected(self):
         return self.c.connected()
 
